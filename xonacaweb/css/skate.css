@@ -1,0 +1,262 @@
+.body {
+    width: 100%;
+    height: 21vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2d4e1;
+    -webkit-perspective: 1200px;
+            perspective: 1200px;
+   }
+  .body * {
+    transition: 0.3s ease-in-out;
+  }
+  .body input {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    left: calc(50% - 225px);
+    top: calc(50% - 75px);
+    z-index: 8;
+    opacity: 0;
+  }
+  .body input:first-of-type:hover ~ .wrap {
+    -webkit-transform-origin: -200px 30%;
+            transform-origin: -200px 30%;
+  }
+  .body input:first-of-type:hover ~ .wrap:before {
+    -webkit-transform-origin: -200px 30%;
+            transform-origin: -200px 30%;
+  }
+  .body input:first-of-type:checked {
+    width: 500px;
+    z-index: 9;
+  }
+  .body input:first-of-type:checked ~ .shadow:before {
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+  }
+  .body input:first-of-type:checked ~ .shadow .wheel {
+    transition: 0.3s ease-in-out;
+    background: #000;
+    opacity: 1;
+    -webkit-transform: scale(1.5) scaleX(1.5) translateX(-5px);
+            transform: scale(1.5) scaleX(1.5) translateX(-5px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+  }
+  .body input:first-of-type:checked ~ .shadow .wheel.right {
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+  }
+  .body input:first-of-type:checked ~ .wrap {
+    -webkit-transform-origin: -200px 30%;
+            transform-origin: -200px 30%;
+    -webkit-transform: rotateY(-20deg) rotateX(2.5deg);
+            transform: rotateY(-20deg) rotateX(2.5deg);
+  }
+  .body input:first-of-type:checked ~ .wrap:before {
+    opacity: 0.1;
+    left: 10%;
+  }
+  .body input:first-of-type:checked ~ .wrap .nose,
+  .body input:first-of-type:checked ~ .wrap .tail {
+    -webkit-filter: brightness(0.85);
+            filter: brightness(0.85);
+    box-shadow: 0px 0 0px 0 rgba(188, 190, 200, 0.05), inset 0px 0 0px 0 rgba(188, 190, 200, 0.05), 20px 0 50px 0 rgba(0, 0, 0, 0.2);
+  }
+  .body input:first-of-type:checked ~ .wrap .tail {
+    box-shadow: 0px 0 0px 0 rgba(188, 190, 200, 0.05), inset 0px 0 0px 0 rgba(188, 190, 200, 0.05), -20px 0 50px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transform: skewY(-5deg);
+            transform: skewY(-5deg);
+  }
+  .body input:first-of-type:checked ~ .wrap .bolts .bolt {
+    box-shadow: inset 1px 0px 0 #d2d4e1, inset 2px 0px 0 white, inset -3px 1px 0px #a4a8c2, 0.5px 0 2px #959ab8, 1.5px 0 0 #d2d4e1;
+  }
+  .body input:last-of-type {
+    margin-left: 250px;
+  }
+  .body input:last-of-type:hover ~ .wrap {
+    -webkit-transform-origin: calc(100% + 200px) 30%;
+            transform-origin: calc(100% + 200px) 30%;
+  }
+  .body input:last-of-type:hover ~ .wrap:before {
+    -webkit-transform-origin: calc(100% + 200px) 30%;
+            transform-origin: calc(100% + 200px) 30%;
+  }
+  .body input:last-of-type:checked {
+    width: 500px;
+    margin-left: 0px;
+    z-index: 9;
+  }
+  .body input:last-of-type:checked ~ .shadow:before {
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+  }
+  .body input:last-of-type:checked ~ .shadow .wheel {
+    transition: 0.3s ease-in-out;
+    background: #000;
+    opacity: 1;
+    -webkit-transform: scale(1.5) scaleX(1.5) translateX(-5px);
+            transform: scale(1.5) scaleX(1.5) translateX(-5px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+  }
+  .body input:last-of-type:checked ~ .shadow .wheel.left {
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+  }
+  .body input:last-of-type:checked ~ .wrap {
+    -webkit-transform-origin: calc(100% + 200px) 30%;
+            transform-origin: calc(100% + 200px) 30%;
+    -webkit-transform: rotateY(20deg) rotateX(2.5deg);
+            transform: rotateY(20deg) rotateX(2.5deg);
+  }
+  .body input:last-of-type:checked ~ .wrap:before {
+    opacity: 0.1;
+    left: 0%;
+  }
+  .body input:last-of-type:checked ~ .wrap .nose,
+  .body input:last-of-type:checked ~ .wrap .tail {
+    -webkit-filter: brightness(0.85);
+            filter: brightness(0.85);
+    box-shadow: 0px 0 0px 0 rgba(188, 190, 200, 0.05), inset 0px 0 0px 0 rgba(188, 190, 200, 0.05), 20px 0 50px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg);
+  }
+  .body input:last-of-type:checked ~ .wrap .tail {
+    box-shadow: 0px 0 0px 0 rgba(188, 190, 200, 0.05), inset 0px 0 0px 0 rgba(188, 190, 200, 0.05), -20px 0 50px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transform: skewY(0deg);
+            transform: skewY(0deg);
+  }
+  .body input:last-of-type:checked ~ .wrap .bolts .bolt {
+    box-shadow: inset -1px 0px 0 #d2d4e1, inset -2px 0px 0 white, inset 3px 1px 0px #a4a8c2, -0.5px 0 2px #959ab8, -1.5px 0 0 #d2d4e1;
+  }
+  .body .shadow {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    width: 425px;
+    height: 150px;
+    left: calc(50% - 212.5px);
+    top: calc(50% - 55px);
+  }
+  .body .shadow:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #343434;
+    border-radius: 250px 250px 250px 250px / 300px 300px 300px 300px;
+    z-index: -1;
+    opacity: 0.75;
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+    transition: 0.5s ease-in-out;
+  }
+  .body .shadow .wheel {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background: #000;
+    bottom: 10px;
+    left: 30px;
+    opacity: 1;
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+    opacity: 0.75;
+  }
+  .body .shadow .wheel.right {
+    left: auto;
+    right: 30px;
+  }
+  .body .wrap {
+    width: 350px;
+    height: 150px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    /*background-color: #222;*/
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuGxWjLzvbVjL52k7FyiKPXEevYaf2kmacu_uOXi1t8GvIG1tb");
+ 
+    position: relative;
+  }
+  .body .wrap:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 5%;
+    box-shadow: 0 0 50px 5px #d2d4e1;
+    background: rgba(188, 190, 200, 0.75);
+    border-radius: 10px;
+    opacity: 0;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    transition: 0.4s ease-in-out;
+  }
+  .body .wrap .nose,
+  .body .wrap .tail {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    left: -79px;
+    z-index: -1;
+    border-radius: 250px 0 0 250px / 225px 0 0 225px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+   /* background-color: #222;*/
+   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuGxWjLzvbVjL52k7FyiKPXEevYaf2kmacu_uOXi1t8GvIG1tb");
+ 
+  }
+  .body .wrap .nose {
+    box-shadow: 1px 0 40px 0 rgba(188, 190, 200, 0.05), inset 1px 0 40px 0 rgba(188, 190, 200, 0.05), 20px 0 50px 0 rgba(0, 0, 0, 0);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+  }
+  .body .wrap .tail {
+    left: auto;
+    right: -79px;
+    border-radius: 0 250px 250px 0 / 0 225px 225px 0;
+    box-shadow: -5px 0 40px 0 rgba(188, 190, 200, 0.07), inset -5px -5px 60px 0px rgba(188, 190, 200, 0.1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .body .wrap .bolts {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 52.5px;
+    left: 20px;
+  }
+  .body .wrap .bolts:nth-of-type(2) {
+    right: 20px;
+    left: auto;
+  }
+  .body .wrap .bolts .bolt {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 500px;
+    background: radial-gradient(circle at center, #222, #222 1px, #ffffff 1px, #d2d4e1 100%);
+    z-index: 9;
+    box-shadow: inset 0 1px 0 #d2d4e1, inset 0 2px 0 white;
+  }
+  .body .wrap .bolts .bolt:nth-of-type(2) {
+    top: 30px;
+  }
+  .body .wrap .bolts .bolt:nth-of-type(3) {
+    left: 40px;
+    top: 30px;
+  }
+  .body .wrap .bolts .bolt:nth-of-type(4) {
+    left: 40px;
+  }
+  

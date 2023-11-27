@@ -1,0 +1,109 @@
+.banner{
+    margin: -29px;
+    position: relative;
+    width: 79%;
+    min-height: 100vh;
+    margin-left: 19%;
+
+}
+
+.banner .imgBx{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 81%;
+    height: 63%;
+
+}
+
+.banner .imgBx img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+opacity: 0;
+transition: 0.5s;
+background-position: center;
+
+}
+
+.banner .imgBx img.active{
+    opacity: 1;
+}
+
+
+.controls{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:0;
+    width: 80px;
+}
+
+.controls li{
+    position: relative;
+    width: 80px;
+    height: 80px;
+   
+    list-style: none;
+    display: flex;
+    align-items: center;    
+    cursor: pointer;
+}
+
+.controls li:before{
+    content:'';
+    position:absolute;
+    width:20px;
+    height: 20px;
+    /* border-left:3px solid #111;
+    border-bottom:3px solid #111; */
+    transform: rotate(45deg);
+}
+.controls li:hover{
+  
+}
+.controls li:nth-child(2):before{
+   
+    transform: rotate(225deg);
+}
+
+.contentBx{
+    position: absolute;
+    bottom: 232px;
+    max-width: 700px;
+}
+
+.contentBx div{
+    display: none;
+
+}
+
+.contentBx div.active{
+    display: block;
+   /* padding: 30px;*/
+    margin-left: 4px;
+background: rgba(0, 0, 0, 0.2);
+}
+
+.contentBx div h2{
+    color: #fff;
+    font-size:2em ;
+}
+
+.contentBx div p{
+    color: #fff;
+    font-size:1.1em;
+
+}
+
+.balon{
+    height:55px;
+    filter: grayscale(100%) opacity(0.7);
+}
+.balon:hover{
+
+ filter: grayscale(0%) opacity(1);
+}

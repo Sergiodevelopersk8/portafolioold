@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapos.com/css2?family=Material+Symbols+Outlined:opsz,wght,Fill,GRAD@48,400,1,0"/>
+    <title>menu prueba</title>
+</head>
+<body>
+    <style>
+    @use postcss-preset-env;
+
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background-color: #798498;
+  display: grid;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 100vh;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+	width: 60px;
+}
+
+nav ul {
+	background-color: #505664;
+	border-radius: 5px;
+	display: inline-table;
+	position: relative;
+}
+
+nav li {
+	float: left;
+}
+
+nav a {
+	color: #6daeb0;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	width: 60px;
+}
+
+nav a:hover{
+	color: #fff;
+}
+
+nav ul li ul {
+	background: #6daeb0;
+	margin-top: 20px;
+	padding: 5px 0;
+	position: absolute;
+}
+
+nav ul li ul:before {
+	background: #6daeb0;
+	content: "";
+	height: 8px;
+	left: 50%;
+  margin: -4px 0 0 -4px;
+	position: absolute;
+	top: 0;
+	transform: rotate(45deg);
+	width: 8px;
+}
+
+nav ul li ul li {
+	float: none;
+}
+
+nav ul li ul li a {
+	color: #fff;
+}
+
+
+nav ul li ul li:hover {
+	background: #5d9799;
+}
+
+.more{
+   display: none;
+}
+.more1{
+   display: block;
+}
+ul.more {
+    margin-left: -15px;
+}
+ul.more1 {
+    margin-left: -15px;
+}
+.more > li{
+    width: 90px;
+}
+.more1 > li{
+    width: 90px;
+}
+    </style>
+        <!-- <nav class="navbar">
+    <ul >
+      <li class="menu"><a href="#"><span class="fontawesome-reorder"></span></a>
+  
+        <ul class="more">
+          <li><a href="#"><span >Proyectos</span></a></li>
+          <li><a href="#"><span ></span>Redes</a></li>
+          
+        </ul>
+  
+      </li>
+    </ul>
+  
+
+</nav> -->
+
+
+  <nav class="navbar">
+            
+    <div class="brand">
+        <h2>S<span>MC</span></h2>
+    </div>
+    <ul class="menu">
+        <li class="menu1"><a class="active" href="#"><span class="link">Home</span></a></li>
+        <li><a href="#portafolio-seccion"><span class="link">Portafolio</span></a></li>
+        <li><a href="#socialmediabtn"><span class="link">Redes Sociales</span ></a></li>
+       
+    </ul>
+    </nav>
+
+    <script src="js/sliderprojects.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pruebas.css">
+    <link rel="stylesheet" href="css/typing.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="navigation">
+            <ul>
+                <li class="list active" style="--clr:#1905a0">
+                    <a href="#">
+                        <span class="icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:#1905a0">
+                    <a href="#">
+                        <span class="icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </span>
+                    </a>
+                </li>
+               
+                <li class="list" style="--clr:#1905a0">
+                    <a href="#">
+                        <span class="icon"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg></span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:#1905a0">
+                    <a href="#">
+                        <span class="icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg> </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+<div class="texto">
+        <div class="glitch" data-text="Sergio">
+            Sergio 
+        </div>
+        <div class="glitch" data-text="Merino">
+             Merino 
+        </div>
+        <div class="glitch" data-text="Cortez">
+            Cortez
+        </div>
+
+    </div>
+
+
+
+
+<div class="wrapper">
+    <div class="txt-statico">Devloper</div>
+<ul class="txts-dinamicos">
+    <li><span>C   sharp </span></li>
+    <li><span>sql server  </span></li>
+    <li><span>Java script </span></li>
+    <li><span>css </span></li>
+    <li><span>html </span></li>
+    <li><span>Php </span></li>
+
+</ul>   
+</div></div>
+
+
+
+<div class="proyectos"></div>
+<div class="sobremi"></div>
+<div class="redes"></div>
+    <script src="js/menu.js"></script>
+
+
+
+
+
+</body>
+</html> -->

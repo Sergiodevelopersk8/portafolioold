@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap-v5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "compile:sass":"sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Boostrap\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[C\u001b[C\u001b[D\u001b[C\u001b[C\u001btstrap",
+    "bootstrap-v5",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass"
+  ],
+  "author": "Sergio Merino Cortez",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.2.3",
+    "postcss-cli": "^10.0.0"
+  }
+}

@@ -1,0 +1,83 @@
+/*El contenedor de la tarjeta plegable: establece el ancho y la altura a lo que quieras. Hemos agregado la propiedad de borde para demostrar que el flip se sale de la caja al pasar el mouse (elimine la perspectiva si no desea el efecto 3D*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* 
+Este contenedor es necesario para colocar el lado frontal y posterior*/
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/*
+Haga un volteo horizontal cuando mueva el mouse sobre el contenedor de la caja de volteo */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Coloque el frente y el reverso */
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  position: absolute;
+  width: 243%;
+  
+  position: absolute;
+  left: 0;
+  bottom: 0;
+   
+  height:100%;
+  backface-visibility: hidden;
+}
+
+
+
+.flip-card-backk {
+  position: absolute;
+  width: 283%;
+  
+  position: absolute;
+  left: 0;
+  bottom: 0;
+   
+  height:100%;
+  backface-visibility: hidden;
+}
+/* Estilo del lado frontal (retroceso si falta la imagen)*/
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* 
+Dale estilo al reverso*/ 
+.flip-card-back {
+ /* background-color: dodgerblue;*/
+ background-image: linear-gradient(to top, #5055d5,#6d6d6d);;
+    box-shadow: 0 12px 30px rgba(80, 85, 223, .37);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-backk {
+  /* background-color: dodgerblue;*/
+  background-image: linear-gradient(to top, #5055d5,#6d6d6d);;
+     box-shadow: 0 12px 30px rgba(80, 85, 223, .37);
+   color: white;
+   transform: rotateY(180deg);
+  }

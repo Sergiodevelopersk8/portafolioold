@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+.animated-box {
+    border-radius: 20px 40px;
+    width: 150px;
+    border-style: solid;
+  
+    animation: gradientAnimation 5s linear infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    border-image: linear-gradient(to right, red, orange) 1;
+    border-radius: 20px 40px;
+  }
+  50% {
+    border-image: linear-gradient(to right, orange, yellow) 1;
+    border-radius: 20px 40px;
+  }
+  100% {
+    border-image: linear-gradient(to right, red, orange) 1;
+    border-radius: 20px 40px;
+  }
+}
+
+
+    </style>
+ <div class="animated-box">Contenido del elemento</div>
+</body>
+</html>

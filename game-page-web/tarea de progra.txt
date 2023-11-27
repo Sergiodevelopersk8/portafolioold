@@ -1,0 +1,75 @@
+using System;
+
+namespace tarea
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Tarea");
+
+            int opcion =0;/*inicio de variable  opcion esto es para el switch y pueda entrar en una opcion esto dependera del usuario y esta declataro en entero*/
+            int edad=0;/*inicio de variable  edad esto es para el if y el usuario ya sabe si es menor o mayor de edad tambien en entero*/
+           
+            bool bucle=true;/*inicio de variable  bucle esto es para el while y pueda entrar en el bucle de repeticion y es hasta que el usuario decida finalizar el programa
+esta declarada en bool por que se maneja en verdad por el momento para que entre en el while */
+           
+
+          
+          
+            while (bucle) /*como la variable bucle esta en true si entra en repeticion */{
+
+                Console.WriteLine("porfavor seleccione una opción");/*solo es para imprimir en pantalla el mensaje */
+                Console.WriteLine("opcion 1 saber si eres mayor de edad \n opcion 2 ingresar e imprimir estrellas\n  opcion 3 finalizar el programa\n)");/*solo es para imprimir en pantalla el mensaje */
+
+                opcion = int.Parse(Console.ReadLine()); /*aqui ya se obtiene lo que el usuario ingrese en numero entero  */
+                switch (opcion)/*ya entra en la opcion elegida*/
+                {
+                     /*caso 1 entrada de if */
+                    case 1:
+
+                        Console.WriteLine("porfavor ingrese su edad para saber si es mayor de edad\n");/*solo es para imprimir en pantalla el mensaje */
+                        edad = int.Parse(Console.ReadLine());/*aqui ya se obtiene lo que el usuario ingrese en numero entero  */
+
+                        if (edad >= 18)/*se compara que si lo que ingreso el usuario es de 18 en adelante pasara a ejecutar el mensaje de que ya es mayor*/
+                        {
+                            Console.WriteLine("ya eres mayor de edad");/*solo es para imprimir en pantalla el mensaje */
+
+                        }
+                        else/*si es menor de 18 ejecutara en pantalla el mensaje de que es menor de edad */
+                        {
+                            Console.WriteLine("Todavia eres menor de edad");
+                        }
+                        break;/*aqui se usa el break pra que vuelva a las opciones */
+
+
+                    case 2:
+                      
+                        for(int i=1; i <=5; i++)/*en este for se inicializa en 1 y pueda entrar y se incrementa hasta el 5*/
+                        {
+                            int asterisco = 0;/*variable para que el usuario ingrese cuantos asteriscos se van a imprimir */
+                            Console.WriteLine("\ningrese " +" " + i +" "+  "numero entero:\n");/*aqui se concatenan para que el usuario sepa en que numero van */
+                            asterisco = int.Parse(Console.ReadLine());/*se lee lo que el usuario ingrese el numero*/
+                            for(int j = 1; j <= asterisco; j++)/*en este for anidado se le y se imprime el numero que se ingreso esto para que se imprima */
+                            {
+                                Console.Write("*\n");
+                            }
+                           
+                        }
+
+
+                        break;
+
+                    case 3:
+
+                        Console.WriteLine("finalizara el programa");
+                        bucle = false;/*la variable bucle pasa a ser false pra que salga del while y finalize el programa*/
+                        break;
+                }
+            }
+            
+
+            Console.ReadKey();/*aqui es para que no se cierre de golpe el programa*/
+        }
+    }
+}
